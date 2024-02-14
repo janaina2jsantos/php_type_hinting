@@ -12,3 +12,4 @@ echo $pessoa->greetings("John Doe", 56, 85, 1.75, function($weight, $height) {
     return calculateImc($weight, $height);
 });
 
+
