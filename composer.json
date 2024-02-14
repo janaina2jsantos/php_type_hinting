@@ -1,0 +1,17 @@
+{
+    "name": "janaina2jsantos/curso-poo-php",
+    "description": "Curso de POO com PHP",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+    {
+      "name": "Janaina Santos",
+      "email": "janaina2jsantos@gmail.com"
+    }
+  ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    }
+}
