@@ -8,7 +8,7 @@ use Source\Pessoa;
 
 $pessoa = new Pessoa();
 
-echo $pessoa->greetings("Angelina Jolie", 56, 85, 1.75, function($weight, $height) {
+echo $pessoa->greetings("John Doe", 56, 85, 1.75, function($weight, $height) {
     return calculateImc($weight, $height);
 });
 
