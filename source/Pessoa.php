@@ -1,15 +1,15 @@
 <?php
 
 declare(strict_types=1);
+
 namespace Source;
-require_once 'source/functions.php';
 
 class Pessoa
 {
-	public function greetings(string $name, int $age, int|float $weight, int|float $height, callable $calculateImc): string
+	public function greetings(string $name, int $age, int|float $weight, int|float $height, CalculaImc $calculaImc): string
 	{
-		$str =  "Olá {$name}, você tem {$age} anos de idade!<br />";
-		$str .= $calculateImc($weight, $height);
+		$str =  "Olá {$name}, você tem {$age} anos de idade!" . PHP_EOL;
+		$str .= $calculaImc->run($weight, $height);
 		return $str;
 	}
 
@@ -20,4 +20,3 @@ class Pessoa
 		exit();
 	}
 }
-
